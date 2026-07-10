@@ -1,21 +1,18 @@
 # BIGST4CK 
-# BIG•ST4CK
+![BIGST4CK](https://files.catbox.moe/519eum.png)
 
-![BIG•ST4CK](https://files.catbox.moe/519eum.png)
-
-#  BIG•ST4CK
+#  BIGST4CK
 
 **Unique WhatsApp Bot with advanced features**  
 Built for fun, entertainment, and automation.
 
 [![Fork](https://img.shields.io/badge/Fork-Repository-2ea44f?style=for-the-badge&logo=github)](https://github.com/bigtechs2/BIGST4CK/fork)
-[![Download ZIP](https://img.shields.io/badge/Download-ZIP-2ea44f?style=for-the-badge&logo=github)](https://github.com/bigtech2/BIGST4CK/archive/refs/heads/main.zip)
+[![Download ZIP](https://img.shields.io/badge/Download-ZIP-2ea44f?style=for-the-badge&logo=github)](https://github.com/bigtechs2/BIGST4CK/archive/refs/heads/main.zip)
 [![Contact Owner](https://img.shields.io/badge/Contact_Owner-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/255636756591)
-[![License](https://img.shields.io/github/license/bigtechs2/BIG-ST4CK?style=for-the-badge)](https://github.com/bigtechs2/BIGST4CK/blob/main/LICENSE)
-[![Version](https://img.shields.io/github/v/release/bigtechs2/BIG-ST4CK?style=for-the-badge)](https://github.com/bigtechs2/BIGST4CK/releases)
+[![License](https://img.shields.io/github/license/bigtechs2/BIGST4CK?style=for-the-badge)](https://github.com/bigtechs2/BIGST4CK/blob/main/LICENSE)
+[![Version](https://img.shields.io/github/v/release/bigtechs2/BIGST4CK?style=for-the-badge)](https://github.com/bigtechs2/BIGST4CK/releases)
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template?template=https://github.com/bigtechs2/BIGST4CK)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bigtechs2/BIGST4CK)
-
 ---
 
 ## 📌 Is this bot official?
