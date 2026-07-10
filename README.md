@@ -179,3 +179,19 @@ If you like this project, please give it a ⭐ on GitHub – it helps others dis
 
 ---
 powered by bigmanj tech ™ with ♥︎
+
+
+<p align="center">
+  <a href="https://github.com/bigtechs2/BIGST4CK/fork" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/🍴_Fork_Now-2ea44f?style=for-the-badge&logo=github" alt="Fork">
+  </a>
+  <a href="https://github.com/bigtechs2/BIGST4CK/archive/refs/heads/main.zip" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/📦_Download_ZIP-blue?style=for-the-badge&logo=github" alt="Download">
+  </a>
+  <a href="https://wa.me/255636756591" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/📱_Contact_Owner-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Contact">
+  </a>
+  <a href="https://github.com/bigtechs2/BIGST4CK" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/⭐_Star_Repo-yellow?style=for-the-badge&logo=github" alt="Star">
+  </a>
+</p>
