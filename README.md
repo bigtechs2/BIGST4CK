@@ -195,3 +195,13 @@ powered by bigmanj tech ™ with ♥︎
     <img src="https://img.shields.io/badge/⭐_Star_Repo-yellow?style=for-the-badge&logo=github" alt="Star">
   </a>
 </p>
+
+
+<p align="center">
+  <a href="https://github.com/bigtechs2/BIGST4CK/fork"><img src="https://img.shields.io/badge/🍴_Fork_Now-2ea44f?style=for-the-badge&logo=github" alt="Fork"></a>
+  <a href="https://github.com/bigtechs2/BIGST4CK/archive/refs/heads/main.zip"><img src="https://img.shields.io/badge/📦_Download_ZIP-blue?style=for-the-badge&logo=github" alt="Download"></a>
+  <a href="https://wa.me/255636756591"><img src="https://img.shields.io/badge/📱_WhatsApp_Owner-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
+  <a href="https://github.com/bigtechs2/BIGST4CK/stargazers"><img src="https://img.shields.io/github/stars/bigtechs2/BIGST4CK?style=for-the-badge&logo=github&color=yellow" alt="Stars"></a>
+  <a href="https://github.com/bigtechs2/BIGST4CK/forks"><img src="https://img.shields.io/github/forks/bigtechs2/BIGST4CK?style=for-the-badge&logo=github&color=orange" alt="Forks"></a>
+  <a href="https://github.com/bigtechs2/BIGST4CK/blob/main/LICENSE"><img src="https://img.shields.io/github/license/bigtechs2/BIGST4CK?style=for-the-badge" alt="License"></a>
+</p>
