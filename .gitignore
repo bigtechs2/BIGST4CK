@@ -1,34 +1,23 @@
-# Gradle files
-.gradle/
-build/
+# Abaikan direktori 'node_modules'
+node_modules/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Abaikan direktori 'state'
+state/
 
-# Log/OS Files
-*.log
+# Abaikan direktori 'database'
+database/
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# Abaikan file 'config.json'
+config.json
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# Abaikan file 'database.json'
+database.json
 
-# Keystore files
-*.jks
-*.keystore
+# Abaikan file 'package-lock.js'
+package-lock.json
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Abaikan file 'yarn.lock'
+yarn.lock
 
-# Android Profiling
-*.hprof
+# Abaikan file 'pnpm-lock.yaml'
+pnpm-lock.yaml
