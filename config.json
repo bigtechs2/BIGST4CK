@@ -1,0 +1,70 @@
+{
+  "bot": {
+    "name": "BIGSTACK",
+    "phoneNumber": "255636756591",
+    "thumbnail": "https://files.catbox.moe/j9ij3h.png",
+    "groupJid": "",
+    "groupLink": "https://chat.whatsapp.com/EqShDJzCwQvLfWAsnQmIQi"
+  },
+  "msg": {
+    "admin": "This command can only be used by group admins!",
+    "banned": "You have been banned!",
+    "botAdmin": "The bot must be a group admin!",
+    "botGroupMembership": "You have not joined the bot's group!",
+    "coin": "You don't have enough coins!",
+    "cooldown": "This command is on cooldown, please wait...",
+    "gamerestrict": "The group admin has restricted game commands!",
+    "group": "This command can only be used in groups!",
+    "groupSewa": "The group admin has not purchased a rental!",
+    "owner": "This command can only be used by the owner!",
+    "premium": "You must be a premium user!",
+    "private": "This command can only be used in private chats!",
+    "privatePremiumOnly": "You must be a premium user to use this in private chats.",
+    "restrict": "This command is restricted to prevent WhatsApp bans!",
+    "unavailableAtNight": "The bot is unavailable from 12:00 AM to 6:00 AM! Please come back later.",
+    "footer": "© BIGST4CK by bigmanjtech™",
+    "wait": "Scraping Metadata...",
+    "notFound": "Server error! Please try again later.",
+    "urlInvalid": "Invalid URL!"
+  },
+  "owner": {
+    "name": "bigtechs1",
+    "organization": "bigmanjtech™",
+    "id": "255705517165",
+    "report": false,
+    "co": [
+      {
+        "name": "bigtechs2",
+        "organization": "bigmanjtech™",
+        "id": "255636756691",
+        "report": false
+      }
+    ]
+  },
+  "sticker": {
+    "packname": "",
+    "author": "‹BIGST4CK›\nby bigmanjtechs™ 💀"
+  },
+  "system": {
+    "alwaysOnline": true,
+    "antiBug": true,
+    "antiCall": false,
+    "autoRead": false,
+    "autoTypingOnCmd": true,
+    "cooldown": 10000,
+    "maxListeners": 50,
+    "port": 3000,
+    "privatePremiumOnly": false,
+    "restrict": false,
+    "requireBotGroupMembership": false,
+    "requireGroupSewa": false,
+    "selfReply": false,
+    "timeZone": "Africa/Tanzania",
+    "unavailableAtNight": false,
+    "useCoin": true,
+    "usePairingCode": true,
+    "customPairingCode": "BIGTECHS",
+    "useStore": false,
+    "useServer": false
+  }
+} 
