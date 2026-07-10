@@ -1,7 +1,7 @@
 {
   "name": "BIGST4CK",
   "version": "8.2.4",
-  "description": "Useless WhatsApp Bot",
+  "description": "Useless Advanced WhatsApp Bot",
   "main": "index.js",
   "directories": {
     "commands": "commands",
