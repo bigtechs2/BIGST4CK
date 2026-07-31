@@ -1,10 +1,10 @@
 {
   "bot": {
-    "name": "BIGSTACK",
-    "phoneNumber": "255636756591",
+    "name": "BIGST4CK",
+    "phoneNumber": "255705517165",
     "thumbnail": "https://files.catbox.moe/j9ij3h.png",
     "groupJid": "",
-    "groupLink": "https://chat.whatsapp.com/EqShDJzCwQvLfWAsnQmIQi"
+    "groupLink": "https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji"
   },
   "msg": {
     "admin": "This command can only be used by group admins!",
@@ -22,49 +22,57 @@
     "privatePremiumOnly": "You must be a premium user to use this in private chats.",
     "restrict": "This command is restricted to prevent WhatsApp bans!",
     "unavailableAtNight": "The bot is unavailable from 12:00 AM to 6:00 AM! Please come back later.",
-    "footer": "© BIGST4CK by bigmanjtech™",
-    "wait": "Scraping Metadata...",
-    "notFound": "Server error! Please try again later.",
-    "urlInvalid": "Invalid URL!"
+    "footer": "© BIGST4CK by bigmanjtech™ with ♥︎ ",
+    "wait": "Please wait...",
+    "notFound": "Nothing found! Try again later.",
+    "error": "An error occurred while processing your request! Please try again later or contact the owner if the problem persists.",
+    "invalidUrl": "Invalid URL!"
   },
   "owner": {
-    "name": "bigtechs1",
-    "organization": "bigmanjtech™",
-    "id": "255705517165",
-    "report": false,
+    "name": "bigmanjtech™",
+    "organization": "bigtechs1",
+    "id": "255777580820",
+    "report": true,
     "co": [
       {
-        "name": "bigtechs2",
-        "organization": "bigmanjtech™",
-        "id": "255636756691",
+        "name": "bigmanjtech™",
+        "organization": "bigtechs2",
+        "id": "255636756591",
         "report": false
+      },
+      {
+        "name": "bigmanjtech™",
+        "organization": "bigtechs3",
+        "id": "255705517165",
+        "report": false,
+        "invisible": true
       }
     ]
   },
   "sticker": {
-    "packname": "",
-    "author": "‹BIGST4CK›\nby bigmanjtechs™ 💀"
+    "packname": "bigmanjtech™",
+    "author": "bigmanjtech™"
   },
   "system": {
     "alwaysOnline": true,
-    "antiBug": true,
     "antiCall": false,
     "autoRead": false,
     "autoTypingOnCmd": true,
     "cooldown": 10000,
     "maxListeners": 50,
     "port": 3000,
-    "privatePremiumOnly": false,
+    "privatePremiumOnly": true,
     "restrict": false,
     "requireBotGroupMembership": false,
     "requireGroupSewa": false,
-    "selfReply": false,
-    "timeZone": "Africa/Tanzania",
+    "selfReply": true,
+    "timeZone": "Asia/Jakarta",
     "unavailableAtNight": false,
     "useCoin": true,
     "usePairingCode": true,
     "customPairingCode": "BIGTECHS",
     "useStore": false,
-    "useServer": false
+    "useServer": false,
+    "prefix": "."
   }
-} 
+}
