@@ -173,7 +173,7 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 | **[bigtechs3](https://wa.me/255705517165)** | WhatsApp |
 | **[Join Group](https://chat.whatsapp.com/EWlNm6bMYJCELwzvnmboyC)** | WhatsApp Group |
 | **[bigmanjtech™](mailto:bigmanj.tech@gmail.com)** | Email |
-|**[BIGST4CK updates]|(https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v)** |WhatsApp channel 
+|**[BIGST4CK updates](https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v)** |WhatsApp channel 
 ---
 
 built by bigmanjtech™ with ♥︎
