@@ -1,9 +1,6 @@
-// Import required modules and dependencies
-const { Events } = require("@itsreimau/gktw");
 const moment = require("moment-timezone");
 
-// Function to handle user join/leave group events
-async function handleWelcome(bot, welcome, type, isSimulate = false) {
+async function WelcomeHandler(bot, welcome, type, isSimulate = false) {
     const groupJid = welcome.id;
     const groupDb = bot.getDb("groups", groupJid);
     const botDb = bot.getDb("bot");
@@ -17,27 +14,16 @@ async function handleWelcome(bot, welcome, type, isSimulate = false) {
     const hour = now.hour();
     if (!isSimulate && config.system.unavailableAtNight && hour >= 0 && hour < 6) return;
 
-    const isWelcome = type === Events.UserJoin;
+    const isWelcome = type === "UserJoin";
     const tag = `@${bot.getId(participantJid)}`;
     const customText = isWelcome ? groupDb?.text?.welcome : groupDb?.text?.goodbye;
     const metadata = await bot.core.groupMetadata(groupJid);
     const text = customText ? customText.replace(/%tag%/g, tag).replace(/%subject%/g, metadata.subject).replace(/%description%/g, metadata.description) : (isWelcome ?
-        `>ᴗ< ${formatter.italic(`Welcome ${tag} to the Group ${metadata.subject}!`)}` :
-        `•︵• ${formatter.italic(`Goodbye, ${tag}!`)}`);
-    const profilePictureUrl = await bot.profilePictureUrl(participantJid);
-    const canvasUrl = tools.api.createUrl("siputzx", `/api/canvas/${isWelcome ? "welcomev5" : "goodbyev5"}`, {
-        username: bot.getPushName(participantJid),
-        guildName: metadata.subject,
-        memberCount: metadata.participants.length,
-        avatar: profilePictureUrl,
-        background: "https://picsum.photos/1024/450"
-    });
+        `>ᴗ< ${bot.format.italic(`Welcome ${tag} to the group ${metadata.subject}!`)}` :
+        `•︵• ${bot.format.italic(`Goodbye, ${tag}!`)}`);
 
     await bot.sendMessage(groupJid, {
-        image: {
-            url: canvasUrl
-        },
-        caption: text,
+        text,
         mentions: [participantJid]
     });
 
@@ -53,9 +39,8 @@ async function handleWelcome(bot, welcome, type, isSimulate = false) {
 }
 
 module.exports = (bot) => {
-    // Event when a user joins or leaves the group
-    bot.ev.on(Events.UserJoin, async (welcome) => handleWelcome(bot, welcome, Events.UserJoin));
-    bot.ev.on(Events.UserLeave, async (welcome) => handleWelcome(bot, welcome, Events.UserLeave));
+    bot.ev.on("UserJoin", async (welcome) => WelcomeHandler(bot, welcome, "UserJoin"));
+    bot.ev.on("UserLeave", async (welcome) => WelcomeHandler(bot, welcome, "UserLeave"));
 };
 
-module.exports.handleWelcome = handleWelcome; // User join/leave event handler
+module.exports.WelcomeHandler = WelcomeHandler;
