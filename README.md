@@ -1,4 +1,6 @@
-# 🤖 BIGST4CK WhatsApp Bot
+https://files.catbox.moe/0hmdof.png
+
+# BIGST4CK 
 
 ![Version](https://img.shields.io/badge/version-8.0.3-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
@@ -130,12 +132,6 @@ Once running, scan the QR code or use the pairing code to connect your WhatsApp 
 
 ---
 
-## 🖼️ Screenshots
-
-![BIGST4CK Bot Demo](https://files.catbox.moe/0hmdof.png)
-
----
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -164,12 +160,14 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 ## 💬 Support / Contact
 
-| Channel | Link |
-|---------|------|
-| **WhatsApp Group** | [Join Group](https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji) |
-| **WhatsApp** | [255777580820](https://wa.me/255777580820) · [255636756591](https://wa.me/255636756591) · [255705517165](https://wa.me/255705517165) |
-| **Email** | [bigmanj.tech@gmail.com](mailto:bigmanj.tech@gmail.com) |
+| Name | WhatsApp | Email |
+|------|----------|-------|
+| **bigmanjtech™** | [Chat on WhatsApp](https://wa.me/255777580820) | [bigmanj.tech@gmail.com](mailto:bigmanj.tech@gmail.com) |
+| **bigtechs1** | [Chat on WhatsApp](https://wa.me/255636756591) | – |
+| **bigtechs2** | [Chat on WhatsApp](https://wa.me/255705517165) | – |
+
+**WhatsApp Group:** [Join Group](https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji)
 
 ---
 
-**BIGST4CK by bigmanjtech™ with ♥︎**
+**Built with ❤️ by bigmanjtech™**
