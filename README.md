@@ -1,13 +1,16 @@
 ![BIGST4CK Bot Demo](https://files.catbox.moe/0hmdof.png)
 
 # BIGST4CK
-WhatsApp bot
+**WhatsApp Bot**
 
-![Version](https://img.shields.io/badge/version-8.0.3-blue)
+![Version](https://img.shields.io/badge/version-8.0.3-grey)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+[![Release](https://img.shields.io/badge/Release-latest-blue)](https://github.com/your-username/BIGST4CK/releases)
+[![Fork](https://img.shields.io/badge/Fork-Repo-orange)](https://github.com/your-username/BIGST4CK/fork)
+[![Download ZIP](https://img.shields.io/badge/Download-ZIP-red)](https://github.com/your-username/BIGST4CK/archive/refs/heads/main.zip)
 
-**weak WhatsApp Bot with AI, Downloaders, and Group Management**
+**Advanced WhatsApp Bot with AI, Downloaders, and Group Management**
 
 ---
 
@@ -71,7 +74,6 @@ npm install
 
 # 3. Copy and configure the example config
 cp config.example.json config.json
-```
 
 ---
 
