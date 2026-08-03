@@ -74,7 +74,7 @@ npm install
 
 # 3. Copy and configure the example config
 cp config.example.json config.json
-
+```
 ---
 
 ## ⚙️ Configuration
