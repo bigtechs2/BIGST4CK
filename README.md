@@ -113,6 +113,39 @@ rename `config.example.json` to `config.json`
 
 ---
 
+## 📝 Creating Custom Commands
+
+Anyone can add new commands to the bot. Use the template below to create your own command.
+
+### 📋 Command Template
+
+```javascript
+module.exports = {
+    name: "yourcommand",        // Main command name (required)
+    aliases: ["yc", "cmd"],     // Alternative names (optional)
+    category: "yourcategory",   // Folder name (optional)
+    permissions: {              // Permission flags (optional)
+        coin: 0,                // Cost in coins
+        group: false,           // Only in groups?
+        owner: false,           // Only bot owner?
+        premium: false,         // Only premium users?
+        admin: false,           // Only group admins?
+        botAdmin: false,        // Bot must be admin?
+        private: false,         // Only private chats?
+        restrict: false         // Restrictive mode?
+    },
+    code: async (ctx) => {      // Main function (required)
+        try {
+            // ── Your logic here ──
+            await ctx.reply("✅ Command executed!");
+        } catch (error) {
+            console.error("[yourcommand] Error:", error);
+            await ctx.reply("❌ An error occurred.");
+        }
+    }
+};
+---
+
 ## 🏃 Usage
 
 ### Start the Bot
