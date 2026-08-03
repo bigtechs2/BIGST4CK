@@ -1,9 +1,8 @@
-// Import required modules and dependencies
-const { Baileys, Events } = require("@itsreimau/gktw");
+const Baileys = require("baileys");
+const util = require("node:util");
 
 module.exports = (bot) => {
-    // Event when bot receives a call
-    bot.ev.on(Events.Call, async (call) => {
+    bot.ev.on("Events", async (call) => {
         if (!config.system.antiCall || call.status !== "offer") return;
 
         const fromJid = call.from;
@@ -16,32 +15,35 @@ module.exports = (bot) => {
         const fromPnJid = call.callerPn;
         const fromPnId = bot.getId(fromPnJid);
 
-        console.log(`Incoming call from: ${fromPnJid}`); // Log incoming call
+        console.log(util.styleText("magenta", "[~]"), `Incoming call from: ${fromPnJid}`);
 
         await bot.core.rejectCall(call.id, fromJid);
 
         fromDb.banned = true;
         fromDb.save();
 
-        const reportOwner = tools.cmd.getReportOwner();
-        if (reportOwner && reportOwner.length > 0) {
-            const {
-                delay
-            } = tools.cmd.calculateDelay(reportOwner.length);
-            for (const ownerId of reportOwner) {
-                await bot.sendMessage(ownerId + Baileys.S_WHATSAPP_NET, {
-                    text: tools.msg.info(`Account @${fromPnId} has been automatically banned for reason ${formatter.inlineCode("Anti Call")}.`),
-                    mentions: [fromPnJid]
-                });
-                await tools.cmd.delay(delay);
+        if (!config.system.restrict) {
+            const reportOwner = bot.helper.getReportOwner();
+            if (reportOwner && reportOwner.length > 0) {
+                const {
+                    delay
+                } = bot.helper.calculateDelay(reportOwner.length);
+                for (const ownerId of reportOwner) {
+                    await bot.sendMessage(ownerId + Baileys.S_WHATSAPP_NET, {
+                        text: bot.format.info(`Account @${fromPnId} has been automatically banned due to ${bot.msg.inlineCode("Anti Call")}.`),
+                        mentions: [fromPnJid]
+                    });
+                    await bot.helper.delay(delay);
+                }
             }
+
+            await bot.sendMessage(fromJid, {
+                text: bot.format.info("You have been automatically banned for violating the rules!"),
+                buttons: [{
+                    text: "Contact Owner",
+                    id: "/owner"
+                }]
+            });
         }
-        await bot.sendMessage(fromJid, {
-            text: tools.msg.info("You have been automatically banned for breaking the rules!"),
-            buttons: [{
-                text: "Contact Owner",
-                id: "/owner"
-            }]
-        });
     });
 };
