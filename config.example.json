@@ -55,8 +55,8 @@
   },
   "system": {
     "alwaysOnline": true,
-    "antiCall": false,
-    "autoRead": false,
+    "antiCall": true,
+    "autoRead": true,
     "autoTypingOnCmd": true,
     "cooldown": 10000,
     "maxListeners": 50,
