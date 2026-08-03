@@ -1,181 +1,352 @@
-# BIGST4CK 
-![BIGST4CK](https://files.catbox.moe/519eum.png)
+🤖 BIGST4CK WhatsApp Bot
 
-#  BIGST4CK
+Advanced WhatsApp Bot with AI, Downloaders, and Group Management
 
-**Unique WhatsApp Bot with advanced features**  
-Built for fun, entertainment, and automation.
+Built with ❤️ by bigmanjtech™
 
-[![Fork](https://img.shields.io/badge/Fork-Repository-2ea44f?style=for-the-badge&logo=github)](https://github.com/bigtechs2/BIGST4CK/fork)
-[![Download ZIP](https://img.shields.io/badge/Download-ZIP-2ea44f?style=for-the-badge&logo=github)](https://github.com/bigtechs2/BIGST4CK/archive/refs/heads/main.zip)
-[![Contact Owner](https://img.shields.io/badge/Contact_Owner-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/255636756591)
-[![License](https://img.shields.io/github/license/bigtechs2/BIGST4CK?style=for-the-badge)](https://github.com/bigtechs2/BIGST4CK/blob/main/LICENSE)
-[![Version](https://img.shields.io/github/v/release/bigtechs2/BIGST4CK?style=for-the-badge)](https://github.com/bigtechs2/BIGST4CK/releases)
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template?template=https://github.com/bigtechs2/BIGST4CK)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bigtechs2/BIGST4CK)
----
-
-## 📌 Is this bot official?
-
-**Yes and no.**  
-This bot is developed and maintained by **bigmanj tech ™** – it is **officially supported** by the author, but it is **not an official WhatsApp product**. It is a community project that uses the WhatsApp Web protocol (via Baileys) to provide an automated assistant. **Use it responsibly** and comply with WhatsApp’s Terms of Service.
-
-> 💡 **Advice from the author:**  
-> Always keep your bot updated, avoid spamming, and respect group admins. This bot is free and open‑source – if you like it, consider ⭐ starring the repo and sharing it with friends!
+https://img.shields.io/badge/version-8.0.3-blue
+https://img.shields.io/badge/Node.js-18+-green
+https://img.shields.io/badge/WhatsApp-Multi_Device-25D366
 
 ---
 
-## ✨ Features
+📌 Table of Contents
 
-| Category | Commands / Features |
-|----------|----------------------|
-| **🤖 AI Chat** | ChatGPT, Gemini, Claude, DeepSeek, Copilot, Perplexity, Qwen, Felo, etc. |
-| **🎨 AI Image Generation** | Flux, Gemmy, MagicStudio, LabsGen, Text2Image, DeepGen, NSFW Generator |
-| **📥 Media Downloader** | YouTube (audio/video), TikTok, Instagram, Facebook, Twitter, Spotify, Pinterest, MediaFire, Google Drive, Telegram Stickers |
-| **🎮 Interactive Games** | Trivia (OpenTDB), Word Game, Family100, Cak Lontong, Tebak Gambar, Asah Otak, Susun Kata, Teka‑teki, etc. |
-| **🛠️ Group Management** | Mute/Unmute, Warn/Unwarn, Kick, Promote/Demote, Approve/Reject join requests, Group settings (open/close/lock), Anti‑spam, Anti‑link, Anti‑toxic, Anti‑media, etc. |
-| **👤 Profile & Economy** | Coins, XP, Leveling, Leaderboard, AFK, Transfer coins, Claim daily/weekly/monthly rewards, Premium system |
-| **🖼️ Rich Interactive Menus** | AIRich product cards, ButtonV2, Carousel, Native Flow, Copy buttons, Suggestion pills |
-| **🔧 Utility Tools** | OCR, Screenshot website, Remove background, HD upscale (image/video), Upload to Catbox, URL shortener, Weather, Quran/Bible lookup, Translate, TTS, Fetch URL, Google Image search, Pinterest/Pixiv search, WhatAnime, WhatMusic (Shazam), YouTube summary |
-| **👑 Owner Commands** | Broadcast, Ban/Unban, Add/Remove premium, Add/Remove rental, Change bot mode, Restart, Update bot, etc. |
-| **📦 Store & Pricing** | Built‑in store with product cards and pricing plans (monthly/yearly) |
+· About
+· Features
+· Commands
+· Installation
+· Configuration
+· Running the Bot
+· Deployment
+· Contributors
+· License
 
 ---
 
-## 🚀 Deployment Guides
+📖 About
 
-### 1️⃣ Deploy on Pterodactyl Panel (Hosting)
-1. Upload all bot files to your `/home/container/` directory.
-2. Make sure `package.json` is present.
-3. Go to your panel, set **Main File** to `index.js`.
-4. Click **Restart** – the panel will install dependencies automatically.
-5. When the bot starts, it will show a **pairing code** (configured in `config.json`). Use that code on WhatsApp to connect.
+BIGST4CK is a powerful, feature-rich WhatsApp bot built with Baileys and Node.js. It combines AI chat, media downloaders, group management, and interactive UI components to provide a seamless experience for users.
 
-### 2️⃣ Deploy on Bot‑Hosting.net
-1. Log in to your Bot‑Hosting.net panel.
-2. Create a new server (Node.js environment).
-3. Upload the bot files via **Files** or **FTP**.
-4. Set **Entry Point** to `index.js`.
-5. Click **Start** – the bot will install dependencies and start.
-6. Look in the console for the pairing code.
+---
 
-### 3️⃣ Deploy on Replit
-1. Fork this repository to your GitHub account.
-2. Create a new Replit, choose **Import from GitHub**.
-3. Select your forked repo.
-4. In the Shell, run `npm install`.
-5. Run `npm start` – the bot will start and show the pairing code.
+✨ Features
 
-### 4️⃣ Deploy on Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/your-username/BIGST4CK)
-1. Click the button above or create a new Heroku app.
-2. Connect your GitHub repository.
-3. Set `MAIN_FILE` to `index.js` in the **Config Vars**.
-4. Deploy the branch – Heroku will install dependencies automatically.
-5. Check the logs for the pairing code.
+🤖 AI & Chat
 
-### 5️⃣ Deploy on Railway
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template?template=https://github.com/your-username/BIGST4CK)
-1. Click the button above or create a new Railway project.
-2. Connect your GitHub repository.
-3. Railway will detect `package.json` and run `npm install` automatically.
-4. Set the **Start Command** to `npm start`.
-5. Deploy and check the logs for the pairing code.
+· ChatGPT – AI chat with session memory
+· DeepSeek – DeepSeek Flash AI assistant
+· Gemini – Google Gemini 2.5 Flash
+· Claude – Anthropic Claude AI
+· Meta AI – Meta AI (Llama) integration
+· Unlimited AI – Free, unlimited AI chat
+· Public AI – AI for everyone
 
-### 6️⃣ Deploy on a VPS (Ubuntu/Debian)
+🎵 Downloaders
+
+· play – Search and download music from YouTube/Spotify
+· facebookdl – Download Facebook videos (reels, posts)
+· ytmp3 – Download YouTube audio
+· ytmp4 – Download YouTube video
+· tiktokdl – Download TikTok videos
+· instagramdl – Download Instagram posts/reels
+
+👥 Group Management
+
+· antibot – Auto-kick bots that join the group
+· warn – Warn rule-breaking members
+· kick – Remove members
+· promote / demote – Admin management
+· mute / unmute – Mute members
+· setoption – Configure anti-spam, anti-link, anti-toxic, etc.
+· welcome / goodbye – Custom join/leave messages
+
+🛠 Utilities
+
+· menu – Interactive main menu
+· status – User & system status with profile picture
+· uptime – Bot uptime with AIRich table
+· about – Bot information
+· owner – Contact owner
+· donate – Support the project
+
+🎨 UI & UX
+
+· AIRich – Rich formatted messages (tables, images, videos)
+· ButtonV2 – Interactive buttons
+· Booking Cards – Native WhatsApp flow messages
+· Progress Bars – Visual level and status bars
+
+---
+
+📋 Commands
+
+AI Chat
+
+Command Aliases Description
+.chatgpt ai, gpt ChatGPT with session & image support
+.deepseek ds, deepseekai DeepSeek Flash AI
+.gemini geminiai, googleai Google Gemini 2.5 Flash
+.claude claudeai, anthropic Claude AI by Anthropic
+.meta metaai, llama, askmeta Meta AI (Llama)
+.unlimitedai uai, freeai Free unlimited AI chat
+.publicai pai, aipublic Public AI for everyone
+
+Downloaders
+
+Command Aliases Description
+.play – Search & download music (YouTube/Spotify)
+.facebookdl facebook, fb, fbdl Download Facebook videos
+.ytmp3 – Download YouTube audio
+.ytmp4 – Download YouTube video
+.tiktokdl – Download TikTok videos
+.instagramdl – Download Instagram posts
+
+Information
+
+Command Aliases Description
+.about bot, infobot Bot information
+.status stats, botinfo User & system status
+.uptime runtime Bot uptime
+.owner creator, developer Contact owner
+.bizinfo profile, brand, business Business profile
+
+Group
+
+Command Aliases Description
+.antibot nobots Auto-kick bots
+.warn – Warn a member
+.warnings – View warnings
+.kick remove, expel Remove member
+.promote makeadmin Promote to admin
+.demote removeadmin Demote admin
+.mute silence Mute a member
+.unmute unsilence Unmute a member
+
+Owner
+
+Command Aliases Description
+.addcmd editcmd, savecmd Add/edit commands (auto-loads)
+.reload refresh, r Reload all commands
+.setprefix changeprefix, prefix Change bot prefix
+.run eval, exec, > Run JavaScript code
+
+Tools
+
+Command Aliases Description
+.banana nanobanana, editimage Edit images with AI
+.table plans, pricing Server plans table
+.weather cuaca, forecast Weather report
+
+---
+
+🚀 Installation
+
+Prerequisites
+
+· Node.js 18+
+· npm or yarn
+· A WhatsApp account (phone number)
+
+1. Clone the Repository
+
 ```bash
-# Update system
-sudo apt update && sudo apt upgrade -y
-
-# Install Node.js and npm
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt install -y nodejs git
-
-# Clone the repository
 git clone https://github.com/your-username/BIGST4CK.git
 cd BIGST4CK
+```
 
-# Install dependencies
+2. Install Dependencies
+
+```bash
 npm install
+```
 
-# Configure (copy example config and edit)
+3. Configure the Bot
+
+Copy the example config and edit it:
+
+```bash
 cp config.example.json config.json
-nano config.json   # edit with your settings
+```
 
-# Start the bot
+Fill in your details in config.json:
+
+```json
+{
+  "bot": {
+    "name": "BIGST4CK",
+    "phoneNumber": "255705517165",
+    "thumbnail": "https://files.catbox.moe/yryprc.jpg",
+    "groupLink": "https://chat.whatsapp.com/..."
+  },
+  "system": {
+    "prefix": ".",
+    "usePairingCode": true,
+    "customPairingCode": "BIGTECHS",
+    "timeZone": "Africa/Tanzania"
+  },
+  "owner": {
+    "name": "bigmanjtech™",
+    "id": "255636756591"
+  }
+}
+```
+
+4. Create .env File (Optional)
+
+```env
+DEEPSEEK_API_KEY=sk-xxxxxxxxxxxx
+```
+
+---
+
+🏃 Running the Bot
+
+Development Mode
+
+```bash
+npm run dev
+```
+
+Production Mode
+
+```bash
 npm start
 ```
 
-### 👥Contributors
+Using PM2
 
-· bigmanj tech ™ – Lead Developer & Maintainer
+```bash
+npm run start:pm2
+pm2 logs
+```
 
-· bigtechs 2– Co-Developer & Tester
+Using Docker (if available)
 
-· bigtechs 1– Infrastructure & Hosting Support.
-
----
-
-### 📄 License
-
-This project is licensed under the MIT License – see the LICENSE file for details.
-
-
-MIT License
-
-Copyright (c) 2026 bigmanj tech 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
+```bash
+docker build -t bigst4ck .
+docker run -d --name bigst4ck -v $(pwd)/database:/app/database bigst4ck
+```
 
 ---
 
-### 🏷️ Bot Version
+📂 Project Structure
 
-Current Version: v8.0.3
+```
+BIGST4CK/
+├── commands/
+│   ├── ai-chat/          # AI commands
+│   ├── downloader/       # Downloader commands
+│   ├── group/            # Group management
+│   ├── information/      # Info commands
+│   ├── owner/            # Owner-only commands
+│   └── tool/             # Utility commands
+├── events/               # Event handlers
+├── lib/                  # Core libraries
+│   ├── client.js         # Main bot client
+│   ├── handler.js        # Command handler
+│   ├── NIXCODE.js        # AIRich implementation
+│   └── group.js          # Group utilities
+├── tools/                # Helper functions
+├── database/             # JSON database (auto-created)
+├── state/                # Authentication state
+├── index.js              # Entry point
+├── main.js               # Bot main file
+├── config.json           # Configuration
+└── package.json          # Dependencies
+```
 
-Check the releases page for changelogs and updates.
-https://github.com/bigtechs2/BIGST4CK/issues.
+---
+
+⚙️ Configuration
+
+config.json Options
+
+Key Description
+bot.name Bot display name
+bot.phoneNumber WhatsApp phone number (international format)
+bot.thumbnail Default thumbnail URL
+bot.groupLink WhatsApp group invite link
+system.prefix Command prefix (default: .)
+system.usePairingCode Use pairing code instead of QR scan
+system.customPairingCode Custom pairing code
+system.timeZone Timezone (e.g., Africa/Tanzania)
+owner.name Owner's name
+owner.id Owner's WhatsApp number
 
 ---
 
-### 👨‍💻 Owner & Support
+🔒 Environment Variables
 
-· Author: bigmanj tech ™
-
-· GitHub: bigtechs2
-
-· WhatsApp: Click to chat 
-  https://wa.me/255636756591 .
+Variable Description
+DEEPSEEK_API_KEY API key for DeepSeek AI
+BOT_TOKEN (Telegram bot token – if used)
 
 ---
 
-### 🤝 Contributing
+🌐 Deployment
 
-Contributions, issues, and feature requests are welcome!
-Feel free to check the issues page or open a pull request.
+Deploy on Pterodactyl
+
+1. Create a new server
+2. Set Node.js as the environment
+3. Upload your files
+4. Set MAIN_FILE to index.js
+5. Run npm install and start
+
+Deploy on VPS
+
+```bash
+git clone https://github.com/your-username/BIGST4CK.git
+cd BIGST4CK
+npm install
+npm install -g pm2
+npm run start:pm2
+```
+
+Deploy on Heroku
+
+```bash
+heroku create bigst4ck
+heroku config:set PLATFORM=whatsapp
+git push heroku main
+```
 
 ---
 
-### ⭐ Show your support
+🤝 Contributors
 
-If you like this project, please give it a ⭐ on GitHub – it helps others discover it!
+Name Role Contact
+bigmanjtech™ Founder & Lead Developer GitHub
+bigtechs1 Contributor WhatsApp: 255636756591
+bigtechs2 Contributor WhatsApp: 255705517165
 
 ---
-powered by bigmanj tech ™ with ♥︎
+
+📄 License
+
+MIT License – see the LICENSE file for details.
+
+---
+
+⚠️ Disclaimer
+
+This bot is not affiliated with WhatsApp Inc. Use at your own risk. The developers are not responsible for any account bans or penalties.
+
+---
+
+💬 Support
+
+· WhatsApp Group: Join Here
+· GitHub Issues: Report Bug
+· Contact Owner: .owner command in the bot
+
+---
+
+🌟 Star the Project
+
+If you find this useful, please give it a ⭐ on GitHub!
+
+---
+
+Built with ❤️ by bigmanjtech™
