@@ -3,7 +3,7 @@
 # BIGST4CK
 **WhatsApp Bot**
 
-![Version](https://img.shields.io/badge/version-8.0.3-grey)
+![Version](https://img.shields.io/badge/version-8.0.3-black)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 [![Release](https://img.shields.io/badge/Release-latest-blue)](https://github.com/your-username/BIGST4CK/releases)
@@ -140,7 +140,7 @@ Once running, scan the QR code or use the pairing code to connect your WhatsApp 
 
 ## 🖼️ Screenshots
 
-![BIGST4CK Bot Demo](https://files.catbox.moe/0hmdof.png)
+![BIGST4CK Bot Demo](https://files.catbox.moe/cbbepj.png)
 
 ---
 
