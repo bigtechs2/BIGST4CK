@@ -3,11 +3,11 @@
     "name": "BIGST4CK",
     "phoneNumber": "255705517165",
     "thumbnail": "https://files.catbox.moe/0hmdof.png",
-    "groupjid" : "",
+    "groupjid": "",
     "groupLink": "https://chat.whatsapp.com/EWlNm6bMYJCELwzvnmboyC",
     "channellink": "https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v"
   },
-    "msg": {
+  "msg": {
     "admin": "This command can only be used by group admins!",
     "banned": "You have been banned!",
     "botAdmin": "The bot must be a group admin!",
@@ -23,7 +23,7 @@
     "privatePremiumOnly": "You must be a premium user to use this in private chats.",
     "restrict": "This command is restricted to prevent WhatsApp bans!",
     "unavailableAtNight": "The bot is unavailable from 12:00 AM to 6:00 AM! Please come back later.",
-    "footer": "© BIGST4CK by bigmanjtech™ with ♥︎ ",
+    "footer": "© BIGST4CK by bigmanjtech™ with ♥︎",
     "wait": "Please wait...",
     "notFound": "Nothing found! Try again later.",
     "error": "An error occurred while processing your request! Please try again later or contact the owner if the problem persists.",
@@ -71,9 +71,19 @@
     "unavailableAtNight": false,
     "useCoin": true,
     "usePairingCode": true,
-    "customPairingCode": "BIGTECHS",
+    "customPairingCode": "BIGTECHS", 
     "useStore": false,
     "useServer": false,
     "prefix": "."
+  },
+  "pterodactyl": {
+    "panelUrl": "https://panel.username.org",
+    "apiKey": "ptla_xxxxx",
+    "defaultEgg": 1,
+    "defaultLocation": 1,
+    "defaultNest": 5
+  },
+  "note": {
+    "message": "⚠️ This is only for server seller people. Do not use this if you are not a server seller." 
   }
 }
