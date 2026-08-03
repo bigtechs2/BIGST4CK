@@ -5,16 +5,15 @@ module.exports = {
     code: async (ctx) => {
         const target = await ctx.target();
 
-        if (!target.jid) {
-            const usageText =
-                `*Instruction:* Send a text with your command.\n` +
-                `*Example:* ${ctx.used} @255719467946\n` +
-                `• Reply/quote a message to set the sender as the target account.`;
+        if (!target.jid)
             return await ctx.reply({
-                text: usageText,
+                text: `${tools.msg.generateInstruction(["send"], ["text"])}\n` +
+                    `${tools.msg.generateCmdExample(ctx.used, "@255719467946")}\n` +
+                    tools.msg.generateNotes([
+                        "Reply/quote a message to set the sender as the target account."
+                    ]),
                 mentions: ["255719362969@s.whatsapp.net"]
             });
-        }
 
         try {
             const result = await ctx.core.profilePictureUrl(target.jid, "image");
@@ -27,7 +26,7 @@ module.exports = {
                 mentions: [target.jid]
             });
         } catch (error) {
-            await ctx.reply(tools.msg.info("Could not fetch this account's profile picture (they may not have one, or their privacy settings block it)."));
+            await ctx.reply(tools.msg.info("ⓘ Could not fetch this account's profile picture (they may not have one, or their privacy settings block it)."));
         }
     }
 };
