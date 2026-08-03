@@ -7,8 +7,8 @@
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 [![Release](https://img.shields.io/badge/Release-latest-blue)](https://github.com/your-username/BIGST4CK/releases)
-[![Fork](https://img.shields.io/badge/Fork-Repo-orange)](https://github.com/your-username/BIGST4CK/fork)
-[![Download ZIP](https://img.shields.io/badge/Download-ZIP-red)](https://github.com/your-username/BIGST4CK/archive/refs/heads/main.zip)
+[![Fork](https://img.shields.io/badge/Fork-Repo-orange)](https://github.com/bigtechs2/BIGST4CK/fork)
+[![Download ZIP](https://img.shields.io/badge/Download-ZIP-red)](https://github.com/bigtechs2/BIGST4CK/archive/refs/heads/main.zip)
 
 **Advanced WhatsApp Bot with AI, Downloaders, and Group Management**
 
