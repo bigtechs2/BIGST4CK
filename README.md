@@ -1,175 +1,80 @@
-🤖 BIGST4CK WhatsApp Bot
+# 🤖 BIGST4CK WhatsApp Bot
 
-Advanced WhatsApp Bot with AI, Downloaders, and Group Management
+![Version](https://img.shields.io/badge/version-8.0.3-blue)
+![Node.js](https://img.shields.io/badge/Node.js-18+-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Built with ❤️ by bigmanjtech™
-
-https://img.shields.io/badge/version-8.0.3-blue
-https://img.shields.io/badge/Node.js-18+-green
-https://img.shields.io/badge/WhatsApp-Multi_Device-25D366
+**Advanced WhatsApp Bot with AI, Downloaders, and Group Management**
 
 ---
 
-📌 Table of Contents
+## 📌 Table of Contents
 
-· About
-· Features
-· Commands
-· Installation
-· Configuration
-· Running the Bot
-· Deployment
-· Contributors
-· License
-
----
-
-📖 About
-
-BIGST4CK is a powerful, feature-rich WhatsApp bot built with Baileys and Node.js. It combines AI chat, media downloaders, group management, and interactive UI components to provide a seamless experience for users.
+- [Features](#features)
+- [Commands](#commands)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [Contributors](#contributors)
+- [License](#license)
+- [Support / Contact](#support--contact)
 
 ---
 
-✨ Features
+## ✨ Features
 
-🤖 AI & Chat
-
-· ChatGPT – AI chat with session memory
-· DeepSeek – DeepSeek Flash AI assistant
-· Gemini – Google Gemini 2.5 Flash
-· Claude – Anthropic Claude AI
-· Meta AI – Meta AI (Llama) integration
-· Unlimited AI – Free, unlimited AI chat
-· Public AI – AI for everyone
-
-🎵 Downloaders
-
-· play – Search and download music from YouTube/Spotify
-· facebookdl – Download Facebook videos (reels, posts)
-· ytmp3 – Download YouTube audio
-· ytmp4 – Download YouTube video
-· tiktokdl – Download TikTok videos
-· instagramdl – Download Instagram posts/reels
-
-👥 Group Management
-
-· antibot – Auto-kick bots that join the group
-· warn – Warn rule-breaking members
-· kick – Remove members
-· promote / demote – Admin management
-· mute / unmute – Mute members
-· setoption – Configure anti-spam, anti-link, anti-toxic, etc.
-· welcome / goodbye – Custom join/leave messages
-
-🛠 Utilities
-
-· menu – Interactive main menu
-· status – User & system status with profile picture
-· uptime – Bot uptime with AIRich table
-· about – Bot information
-· owner – Contact owner
-· donate – Support the project
-
-🎨 UI & UX
-
-· AIRich – Rich formatted messages (tables, images, videos)
-· ButtonV2 – Interactive buttons
-· Booking Cards – Native WhatsApp flow messages
-· Progress Bars – Visual level and status bars
+- 🤖 **AI Chat** – ChatGPT, DeepSeek, Gemini, Claude, Meta AI
+- 🎵 **Downloaders** – YouTube, Spotify, Facebook, TikTok, Instagram
+- 👥 **Group Management** – Anti-bot, Warn, Kick, Promote, Demote, Mute
+- 🎨 **Rich UI** – AIRich messages, interactive buttons, booking cards
+- 📊 **User Status** – Level, coins, badges, uptime tracking
+- 🔧 **Custom Commands** – Add/edit commands on-the-fly with `.addcmd`
 
 ---
 
-📋 Commands
+## 📋 Commands
 
-AI Chat
+| Category | Commands |
+|----------|----------|
+| **AI Chat** | `.chatgpt`, `.deepseek`, `.gemini`, `.claude`, `.meta`, `.unlimitedai`, `.publicai` |
+| **Downloader** | `.play`, `.facebookdl`, `.ytmp3`, `.ytmp4`, `.tiktokdl`, `.instagramdl` |
+| **Group** | `.antibot`, `.warn`, `.kick`, `.promote`, `.demote`, `.mute`, `.setoption` |
+| **Information** | `.about`, `.status`, `.uptime`, `.owner`, `.bizinfo` |
+| **Owner** | `.addcmd`, `.reload`, `.setprefix`, `.run` |
+| **Tools** | `.banana`, `.table`, `.weather`, `.poll` |
 
-Command Aliases Description
-.chatgpt ai, gpt ChatGPT with session & image support
-.deepseek ds, deepseekai DeepSeek Flash AI
-.gemini geminiai, googleai Google Gemini 2.5 Flash
-.claude claudeai, anthropic Claude AI by Anthropic
-.meta metaai, llama, askmeta Meta AI (Llama)
-.unlimitedai uai, freeai Free unlimited AI chat
-.publicai pai, aipublic Public AI for everyone
-
-Downloaders
-
-Command Aliases Description
-.play – Search & download music (YouTube/Spotify)
-.facebookdl facebook, fb, fbdl Download Facebook videos
-.ytmp3 – Download YouTube audio
-.ytmp4 – Download YouTube video
-.tiktokdl – Download TikTok videos
-.instagramdl – Download Instagram posts
-
-Information
-
-Command Aliases Description
-.about bot, infobot Bot information
-.status stats, botinfo User & system status
-.uptime runtime Bot uptime
-.owner creator, developer Contact owner
-.bizinfo profile, brand, business Business profile
-
-Group
-
-Command Aliases Description
-.antibot nobots Auto-kick bots
-.warn – Warn a member
-.warnings – View warnings
-.kick remove, expel Remove member
-.promote makeadmin Promote to admin
-.demote removeadmin Demote admin
-.mute silence Mute a member
-.unmute unsilence Unmute a member
-
-Owner
-
-Command Aliases Description
-.addcmd editcmd, savecmd Add/edit commands (auto-loads)
-.reload refresh, r Reload all commands
-.setprefix changeprefix, prefix Change bot prefix
-.run eval, exec, > Run JavaScript code
-
-Tools
-
-Command Aliases Description
-.banana nanobanana, editimage Edit images with AI
-.table plans, pricing Server plans table
-.weather cuaca, forecast Weather report
+> Use `.menu` to open the interactive main menu.
 
 ---
 
-🚀 Installation
+## 🚀 Installation
 
-Prerequisites
+### Prerequisites
+- **Node.js** 18+
+- **npm** or **yarn**
+- A **WhatsApp** account
 
-· Node.js 18+
-· npm or yarn
-· A WhatsApp account (phone number)
-
-1. Clone the Repository
+### Steps
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/your-username/BIGST4CK.git
 cd BIGST4CK
-```
 
-2. Install Dependencies
-
-```bash
+# 2. Install dependencies
 npm install
-```
 
-3. Configure the Bot
-
-Copy the example config and edit it:
-
-```bash
+# 3. Copy and configure the example config
 cp config.example.json config.json
 ```
 
-Fill in your details in config.json:
+---
+
+## ⚙️ Configuration
+
+Edit `config.json` with your details:
 
 ```json
 {
@@ -177,7 +82,7 @@ Fill in your details in config.json:
     "name": "BIGST4CK",
     "phoneNumber": "255705517165",
     "thumbnail": "https://files.catbox.moe/yryprc.jpg",
-    "groupLink": "https://chat.whatsapp.com/..."
+    "groupLink": "https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji"
   },
   "system": {
     "prefix": ".",
@@ -192,161 +97,79 @@ Fill in your details in config.json:
 }
 ```
 
-4. Create .env File (Optional)
-
-```env
-DEEPSEEK_API_KEY=sk-xxxxxxxxxxxx
-```
+| Key | Description |
+|-----|-------------|
+| `bot.phoneNumber` | Your WhatsApp number (international format) |
+| `system.prefix` | Command prefix (default: `.`) |
+| `system.usePairingCode` | Use pairing code instead of QR scan |
 
 ---
 
-🏃 Running the Bot
+## 🏃 Usage
 
-Development Mode
-
-```bash
-npm run dev
-```
-
-Production Mode
+### Start the Bot
 
 ```bash
 npm start
 ```
 
-Using PM2
+### Development Mode
+
+```bash
+npm run dev
+```
+
+### With PM2
 
 ```bash
 npm run start:pm2
 pm2 logs
 ```
 
-Using Docker (if available)
-
-```bash
-docker build -t bigst4ck .
-docker run -d --name bigst4ck -v $(pwd)/database:/app/database bigst4ck
-```
+Once running, scan the QR code or use the pairing code to connect your WhatsApp account.
 
 ---
 
-📂 Project Structure
+## 🖼️ Screenshots
 
-```
-BIGST4CK/
-├── commands/
-│   ├── ai-chat/          # AI commands
-│   ├── downloader/       # Downloader commands
-│   ├── group/            # Group management
-│   ├── information/      # Info commands
-│   ├── owner/            # Owner-only commands
-│   └── tool/             # Utility commands
-├── events/               # Event handlers
-├── lib/                  # Core libraries
-│   ├── client.js         # Main bot client
-│   ├── handler.js        # Command handler
-│   ├── NIXCODE.js        # AIRich implementation
-│   └── group.js          # Group utilities
-├── tools/                # Helper functions
-├── database/             # JSON database (auto-created)
-├── state/                # Authentication state
-├── index.js              # Entry point
-├── main.js               # Bot main file
-├── config.json           # Configuration
-└── package.json          # Dependencies
-```
+![BIGST4CK Bot Demo](https://files.catbox.moe/0hmdof.png)
 
 ---
 
-⚙️ Configuration
+## 🤝 Contributing
 
-config.json Options
-
-Key Description
-bot.name Bot display name
-bot.phoneNumber WhatsApp phone number (international format)
-bot.thumbnail Default thumbnail URL
-bot.groupLink WhatsApp group invite link
-system.prefix Command prefix (default: .)
-system.usePairingCode Use pairing code instead of QR scan
-system.customPairingCode Custom pairing code
-system.timeZone Timezone (e.g., Africa/Tanzania)
-owner.name Owner's name
-owner.id Owner's WhatsApp number
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ---
 
-🔒 Environment Variables
+## 👥 Contributors
 
-Variable Description
-DEEPSEEK_API_KEY API key for DeepSeek AI
-BOT_TOKEN (Telegram bot token – if used)
-
----
-
-🌐 Deployment
-
-Deploy on Pterodactyl
-
-1. Create a new server
-2. Set Node.js as the environment
-3. Upload your files
-4. Set MAIN_FILE to index.js
-5. Run npm install and start
-
-Deploy on VPS
-
-```bash
-git clone https://github.com/your-username/BIGST4CK.git
-cd BIGST4CK
-npm install
-npm install -g pm2
-npm run start:pm2
-```
-
-Deploy on Heroku
-
-```bash
-heroku create bigst4ck
-heroku config:set PLATFORM=whatsapp
-git push heroku main
-```
+| Name | Role |
+|------|------|
+| **bigmanjtech™** | Founder & Lead Developer |
+| **bigtechs1** | Contributor |
+| **bigtechs2** | Contributor |
 
 ---
 
-🤝 Contributors
+## 📄 License
 
-Name Role Contact
-bigmanjtech™ Founder & Lead Developer GitHub
-bigtechs1 Contributor WhatsApp: 255636756591
-bigtechs2 Contributor WhatsApp: 255705517165
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
-📄 License
+## 💬 Support / Contact
 
-MIT License – see the LICENSE file for details.
-
----
-
-⚠️ Disclaimer
-
-This bot is not affiliated with WhatsApp Inc. Use at your own risk. The developers are not responsible for any account bans or penalties.
+| Channel | Link |
+|---------|------|
+| **WhatsApp Group** | [Join Group](https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji) |
+| **WhatsApp** | [255777580820](https://wa.me/255777580820) · [255636756591](https://wa.me/255636756591) · [255705517165](https://wa.me/255705517165) |
+| **Email** | [bigmanj.tech@gmail.com](mailto:bigmanj.tech@gmail.com) |
 
 ---
 
-💬 Support
-
-· WhatsApp Group: Join Here
-· GitHub Issues: Report Bug
-· Contact Owner: .owner command in the bot
-
----
-
-🌟 Star the Project
-
-If you find this useful, please give it a ⭐ on GitHub!
-
----
-
-Built with ❤️ by bigmanjtech™
+**BIGST4CK by bigmanjtech™ with ♥︎**
