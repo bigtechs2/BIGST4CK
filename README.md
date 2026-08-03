@@ -166,13 +166,13 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 ## 💬 Support / Contact
 
-```
-WhatsApp | bigtechs1     | 255777580820
-WhatsApp | bigtechs2     | 255636756591
-WhatsApp | bigtechs3     | 255705517165
-WhatsApp | Join Group    | https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji
-Email    | bigmanjtech™ | bigmanj.tech@gmail.com
-```
+| Name | Contact |
+|------|---------|
+| **[bigtechs1](https://wa.me/255777580820)** | WhatsApp |
+| **[bigtechs2](https://wa.me/255636756591)** | WhatsApp |
+| **[bigtechs3](https://wa.me/255705517165)** | WhatsApp |
+| **[Join Group](https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji)** | WhatsApp Group |
+| **[bigmanjtech™](mailto:bigmanj.tech@gmail.com)** | Email |
 
 ---
 
