@@ -1,23 +1,8 @@
-# Abaikan direktori 'node_modules'
 node_modules/
-
-# Abaikan direktori 'state'
 state/
-
-# Abaikan direktori 'database'
 database/
-
-# Abaikan file 'config.json'
 config.json
-
-# Abaikan file 'database.json'
 database.json
-
-# Abaikan file 'package-lock.js'
 package-lock.json
-
-# Abaikan file 'yarn.lock'
 yarn.lock
-
-# Abaikan file 'pnpm-lock.yaml'
 pnpm-lock.yaml
