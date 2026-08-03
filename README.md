@@ -1,6 +1,6 @@
 ![BIGST4CK Bot Demo](https://files.catbox.moe/0hmdof.png)
 
-# 🤖 BIGST4CK WhatsApp Bot
+# *BIGST4CK WhatsApp bot*
 
 ![Version](https://img.shields.io/badge/version-8.0.3-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
@@ -76,7 +76,8 @@ cp config.example.json config.json
 
 ## ⚙️ Configuration
 
-Edit `config.json` with your details:
+Edit `config.example.json` with your details:
+rename `config.example.json` to `config.json`
 
 ```json
 {
@@ -84,7 +85,9 @@ Edit `config.json` with your details:
     "name": "BIGST4CK",
     "phoneNumber": "255705517165",
     "thumbnail": "https://files.catbox.moe/yryprc.jpg",
-    "groupLink": "https://chat.whatsapp.com/JgHII0iCl42JD2mGoJSwji"
+    "groupjid" : ""
+    "groupLink": "https://chat.whatsapp.com/EWlNm6bMYJCELwzvnmboyC"
+    "channellink": "https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v"
   },
   "system": {
     "prefix": ".",
