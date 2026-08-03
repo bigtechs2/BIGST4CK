@@ -1,4 +1,4 @@
-https://files.catbox.moe/0hmdof.png
+![BIGST4CK Bot Demo](https://files.catbox.moe/0hmdof.png)
 
 # BIGST4CK 
 
