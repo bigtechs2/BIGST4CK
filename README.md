@@ -1,6 +1,6 @@
 ![BIGST4CK Bot Demo](https://files.catbox.moe/0hmdof.png)
 
-# *BIGST4CK WhatsApp bot*
+# BIGST4CK WhatsApp bot
 
 ![Version](https://img.shields.io/badge/version-8.0.3-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
