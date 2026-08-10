@@ -20,7 +20,7 @@
 - [Commands](##-📋-Commands)
 - [Installation](##-🚀-Installation)
 - [Configuration](##-⚙️-Configuration)
-- [Creatingcustomcmd](##-📝-Creating Custom-Commands)
+- [Creatingcustomcmd](##-📝-Creating-Custom-Commands)
 - [Usage](##-🏃-Usage)
 - [Screenshots](##-🖼️-Screenshots)
 - [Contributing](##-👥-Contributors)
