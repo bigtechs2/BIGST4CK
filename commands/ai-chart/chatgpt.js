@@ -1,6 +1,8 @@
+const axios = require("axios");
+
 module.exports = {
     name: "chatgpt",
-    aliases: ["ai", "gpt"],
+    aliases: ["gpt", "ai"],
     category: "ai-chat",
     permissions: {
         coin: 10
@@ -8,39 +10,64 @@ module.exports = {
     code: async (ctx) => {
         const input = ctx.text || ctx.quoted?.body;
 
-        if (!input)
+        if (!input) {
             return await ctx.reply(
                 `${tools.msg.generateInstruction(["send"], ["text"])}\n` +
-                tools.msg.generateCmdExample(ctx.used, "what is evangelion?")
+                tools.msg.generateCmdExample(ctx.used, "What is the meaning of life?")
             );
+        }
+
+        const senderDb = ctx.db.user;
+
+        // ── Reset session ──
+        if (input.toLowerCase() === "reset") {
+            if (!senderDb.sessionId) senderDb.sessionId = {};
+            senderDb.sessionId.chatgpt = ctx.helper.randomUUID();
+            senderDb.save();
+            return await ctx.reply(tools.msg.info("Conversation history has been reset!"));
+        }
 
         try {
-            // =========================
-            // FETCH AI RESPONSE
-            // =========================
-            const { data: res } = await axios.get(
-                "https://api.yupra.my.id/api/ai/copilot?text=",
-                {
-                    params: {
-                        prompt: input,
-                        model: "think-deeper"
-                    },
-                    timeout: 60000
-                }
-            );
-
-            if (!res.success || !res.result?.text) {
-                return await ctx.reply(tools.msg.info("Failed to get a response from AI. Please try again later."));
+            // ── Ensure session exists ──
+            if (!senderDb.sessionId?.chatgpt) {
+                if (!senderDb.sessionId) senderDb.sessionId = {};
+                senderDb.sessionId.chatgpt = ctx.helper.randomUUID();
+                senderDb.save();
             }
 
-            // =========================
-            // SEND RESULT
-            // =========================
-            await ctx.reply({
-                richResponse: [{
-                    text: res.result.text
-                }]
+            // ── Build API URL ──
+            const apiUrl = tools.api.createUrl("alwayscodex", "/api/ai/chatgpt-org", {
+                teks: input,
+                model: "openai/gpt-4o-mini",
+                session: senderDb.sessionId.chatgpt
             });
+
+            // ── Fetch AI response ──
+            const { data } = await axios.get(apiUrl, { timeout: 30000 });
+
+            // ── Extract result ──
+            let result = data.result || "No response received.";
+
+            // ── Truncate if too long ──
+            if (result.length > 3500) {
+                result = result.substring(0, 3500) + "\n\n_... (truncated)_";
+            }
+
+            // ── Send with AIRich ──
+            await new AIRich(ctx.core)
+                .addText(
+                    `# 🧠 ChatGPT\n\n` +
+                    `**Q:** ${input}\n\n` +
+                    `**A:** ${result}\n\n` +
+                    `[](https://wa.me/${config.owner.id})`
+                )
+                .addTip("_Powered by bigmanjtech™ — ai system_")
+                .addSuggest([
+                    `${ctx.used.prefix}chatgpt`,
+                    `${ctx.used.prefix}deepseek`,
+                    `${ctx.used.prefix}menu ai-chat`
+                ])
+                .send(ctx._msg.key.remoteJid, { quoted: ctx._msg });
 
         } catch (error) {
             await tools.cmd.handleError(ctx, error, true);
