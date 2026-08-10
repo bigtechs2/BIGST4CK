@@ -23,7 +23,7 @@
 - [Creatingcustomcmd](## 📝 Creating Custom Commands)
 - [Usage](## 🏃 Usage)
 - [Screenshots](## 🖼️ Screenshots)
-- [Contributing](## 👥 Contributors)
+- [Contributing](#-👥-Contributors)
 - [Contributors](## 👥 Contributors)
 - [License](## 📄 License)
 - [Support / Contact](## 💬 Support / Contact)
