@@ -15,17 +15,29 @@
 ---
 
 ## 📌 Table of Contents
+- [Is this bot official?](## 📌 Is this bot official?)
+- [Features](## ✨ Features)
+- [Commands](## 📋 Commands)
+- [Installation](## 🚀 Installation)
+- [Configuration](## ⚙️ Configuration)
+- [Creatingcustomcmd](## 📝 Creating Custom Commands)
+- [Usage](## 🏃 Usage)
+- [Screenshots](## 🖼️ Screenshots)
+- [Contributing](## 👥 Contributors)
+- [Contributors](## 👥 Contributors)
+- [License](## 📄 License)
+- [Support / Contact](## 💬 Support / Contact)
+- [show support](## ⭐ Show your support)
+- [join our site for updates](## 🌠 SITE FOR UPDATES)
 
-- [Features](#features)
-- [Commands](#commands)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
-- [Support / Contact](#support--contact)
+---
+## 📌 Is this bot official?
+
+**Yes and no.**  
+This bot is developed and maintained by **bigmanj tech ™** – it is **officially supported** by the author, but it is **not an official WhatsApp product**. It is a community project that uses the WhatsApp Web protocol (via Baileys) to provide an automated assistant. **Use it responsibly** and comply with WhatsApp’s Terms of Service.
+
+> 💡 **Advice from the author:**  
+> Always keep your bot updated, avoid spamming, and respect group admins. This bot is free and open‑source – if you like it, consider ⭐ starring the repo and sharing it with friends!,for updates [join our site for updates](## 🌠 SITE FOR UPDATES)
 
 ---
 
@@ -185,6 +197,10 @@ Once running, scan the QR code or use the pairing code to connect your WhatsApp 
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+   
+Contributions, issues, and feature requests are welcome!
+Feel free to check the issues page or open a pull request.
+
 
 ---
 
@@ -195,6 +211,7 @@ Once running, scan the QR code or use the pairing code to connect your WhatsApp 
 | **bigmanjtech™** | Founder & Lead Developer |
 | **bigtechs1** | Contributor |
 | **bigtechs2** | Contributor |
+
 
 ---
 
@@ -215,5 +232,26 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 | **[bigmanjtech™](mailto:bigmanj.tech@gmail.com)** | Email |
 |**[BIGST4CK updates](https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v)** |WhatsApp channel 
 ---
+## ⭐ Show your support
+
+If you like this project, please give it a ⭐ on GitHub – it helps others discover it!
+
+---
+
+## 🌠 SITE FOR UPDATES
+
+### 📢 **BIGST4CK Family Group**
+
+> Welcome to the **BIGST4CK Family Group**! 🚀 This is the official WhatsApp group for users, developers, and enthusiasts of the BIGST4CK brand. Share your experiences, ask questions, report bugs, suggest new features, and connect with the team and other users.
+
+**[Join Group](https://chat.whatsapp.com/EWlNm6bMYJCELwzvnmboyC)**
+
+---
+
+### 📢 **BIGST4CK Updates Channel**
+
+> 📢 The official broadcast channel for **BIGST4CK**. Get the latest news, updates, new features, release notes, and important announcements. Stay informed and never miss an update!
+
+**[Join WhatsApp Channel](https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v)**
 
 built by bigmanjtech™ with ♥︎
