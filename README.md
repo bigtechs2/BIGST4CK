@@ -24,7 +24,7 @@
 - [Usage](## 🏃 Usage)
 - [Screenshots](## 🖼️ Screenshots)
 - [Contributing](#-👥-Contributors)
-- [Contributors](## 👥 Contributors)
+- [Contributors](##-👥-Contributors)
 - [License](## 📄 License)
 - [Support / Contact](## 💬 Support / Contact)
 - [show support](## ⭐ Show your support)
