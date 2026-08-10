@@ -15,7 +15,7 @@
 ---
 
 ## 📌 Table of Contents
-- [Is this bot official?](##-📌-Is this bot official?)
+- [Is this bot official?](## -📌-Is this bot official?)
 - [Features](##-✨-Features)
 - [Commands](##-📋-Commands)
 - [Installation](##-🚀-Installation)
@@ -27,8 +27,9 @@
 - [Contributors](##-👥-Contributors)
 - [License](##-📄-License)
 - [Support / Contact](##-💬-Support / Contact)
-- [show support](##-⭐-Show your support)
-- [join our site for updates](## 🌠 SITE FOR UPDATES)
+- [show support](## -⭐-Show your support)
+- [join our site for updates](## 
+-🌠-SITE FOR UPDATES)
 
 ---
 ## 📌 Is this bot official?
