@@ -15,19 +15,19 @@
 ---
 
 ## 📌 Table of Contents
-- [Is this bot official?](## 📌 Is this bot official?)
-- [Features](## ✨ Features)
-- [Commands](## 📋 Commands)
-- [Installation]( ## 🚀 Installation)
-- [Configuration](## ⚙️ Configuration)
-- [Creatingcustomcmd](##- 📝 Creating Custom Commands)
-- [Usage](## 🏃 Usage)
-- [Screenshots](## 🖼️ Screenshots)
-- [Contributing](#-👥-Contributors)
+- [Is this bot official?](##-📌-Is this bot official?)
+- [Features](##-✨-Features)
+- [Commands](##-📋-Commands)
+- [Installation](##-🚀-Installation)
+- [Configuration](##-⚙️-Configuration)
+- [Creatingcustomcmd](##-📝-Creating Custom Commands)
+- [Usage](##-🏃-Usage)
+- [Screenshots](##-🖼️-Screenshots)
+- [Contributing](##-👥-Contributors)
 - [Contributors](##-👥-Contributors)
-- [License](## 📄 License)
-- [Support / Contact](## 💬 Support / Contact)
-- [show support](## ⭐ Show your support)
+- [License](##-📄-License)
+- [Support / Contact](##-💬-Support / Contact)
+- [show support](##-⭐-Show your support)
 - [join our site for updates](## 🌠 SITE FOR UPDATES)
 
 ---
