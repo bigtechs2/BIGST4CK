@@ -18,7 +18,7 @@
 - [Is this bot official?](## 📌 Is this bot official?)
 - [Features](## ✨ Features)
 - [Commands](## 📋 Commands)
-- [Installation](## 🚀 Installation)
+- [Installation]( ## 🚀 Installation)
 - [Configuration](## ⚙️ Configuration)
 - [Creatingcustomcmd](## 📝 Creating Custom Commands)
 - [Usage](## 🏃 Usage)
