@@ -7,68 +7,36 @@ module.exports = {
         group: true
     },
     code: async (ctx) => {
-        const input = ctx.text || ctx.quoted?.body || "";
+        const input = ctx.text || ctx.quoted?.body;
 
-        // ── Check if the message itself is media ──
-        const isMedia = ctx.isMedia && ctx.isMedia(["image", "video"]);
-        // ── Check if the quoted message is media ──
-        const isQuotedMedia = ctx.quoted && ctx.quoted.isMedia && ctx.quoted.isMedia(["image", "video"]);
-
-        // If no text and no media, show usage
-        if (!input && !isMedia && !isQuotedMedia) {
+        if (!input)
             return await ctx.reply(
-                `${tools.msg.generateInstruction(["send"], ["text", "image", "video"])}\n` +
-                tools.msg.generateCmdExample(ctx.used, "Hello, world!") + "\n" +
-                tools.msg.generateNotes([
-                    "You can also send an image/video with a caption."
-                ])
+                `${ctx.format.generateInstruction(["send"], ["text"])}\n` +
+                ctx.format.generateCmdExample(ctx.used, "hallo, world 🌍!")
             );
-        }
 
         try {
-            let content = {};
-
-            // ── If the message itself is media ──
-            if (isMedia) {
-                const buffer = await ctx.msg.download().catch(() => null);
-                if (buffer) {
-                    const type = ctx.msg.messageType || "image";
-                    content = {
-                        [type]: buffer,
-                        caption: input || ""
-                    };
-                }
+            let content;
+            const type = ctx.isMedia(["image", "video"]);
+            if (["image", "video"].includes(type)) {
+                const buffer = await ctx.msg.download() || await ctx.quoted.download();
+                content = {
+                    [type]: buffer,
+                    caption: input
+                };
+            } else {
+                content = {
+                    text: input
+                };
             }
-            // ── If the quoted message is media ──
-            else if (isQuotedMedia) {
-                const buffer = await ctx.quoted.download().catch(() => null);
-                if (buffer) {
-                    const type = ctx.quoted.messageType || "image";
-                    content = {
-                        [type]: buffer,
-                        caption: input || ""
-                    };
-                }
-            }
-            // ── Otherwise it's plain text ──
-            else {
-                content = { text: input };
-            }
-
-            // ── Send the status message ──
             await ctx.reply({
                 ...content,
                 groupStatus: true
             });
 
-            // ── Send confirmation message in WhatsApp ──
-            await ctx.reply("› *Group status sent successfully!*");
-
-            console.log("[groupstatus] Status sent successfully.");
-
+            await ctx.reply(ctx.format.info("Group status successfully sent!"));
         } catch (error) {
-            console.error("[groupstatus] Error:", error);
-            await ctx.reply("❌ Failed to send group status. Please try again.");
+            await ctx.helper.handleError(ctx, error, false);
         }
     }
 };
