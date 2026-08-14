@@ -1,0 +1,42 @@
+module.exports = {
+    name: "leaderboard",
+    aliases: ["lb", "peringkat"],
+    category: "profile",
+    code: async (ctx) => {
+        try {
+            const users = ctx.db.users.getAll();
+            const senderLid = ctx.sender.lid;
+            const senderId = ctx.getId(senderLid);
+
+            const leaderboardData = users.map(user => ({
+                jid: user.jid,
+                pushName: user.pushName,
+                level: user.level || 0,
+                winGame: user.winGame || 0
+            })).sort((a, b) => b.winGame - a.winGame || b.level - a.level);
+
+            const userRank = leaderboardData.findIndex(user => ctx.helper.areJidsSameUser(user.jid, senderLid)) + 1;
+            const topUsers = leaderboardData.slice(0, 10);
+            let resultText = "";
+
+            topUsers.forEach((user, i) => {
+                const isSelf = ctx.helper.areJidsSameUser(user.jid, senderLid);
+                const displayUser = isSelf ? `@${senderId}` : (user.pushName ? user.pushName : ctx.getId(user.jid));
+                resultText += `»› ${displayUser} - Wins: ${user.winGame}, Level: ${user.level}, Rank: ${i + 1}\n`;
+            });
+
+            if (userRank > 10) {
+                const userStats = leaderboardData[userRank - 1];
+                const displayUser = `@${senderId}`;
+                resultText += `»› ${displayUser} - Wins: ${userStats.winGame}, Level: ${userStats.level}, Rank: ${userRank}\n`;
+            }
+
+            await ctx.reply({
+                text: resultText.trim(),
+                mentions: [senderLid]
+            });
+        } catch (error) {
+            await ctx.helper.handleError(ctx, error);
+        }
+    }
+};
