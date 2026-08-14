@@ -50,7 +50,7 @@ module.exports = [{
                 mentions: ["6281234567891@s.whatsapp.net"]
             });
 
-        if (await ctx.group().isOwner(target.jid)) return await ctx.reply(ctx.format.info("Dia adalah owner grup!"));
+        if (await ctx.group().isOwner(target.jid)) return await ctx.reply(ctx.format.info("He is the owner of the group!"));
 
         try {
             await ctx.group().kick(target.jid);
