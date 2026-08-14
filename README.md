@@ -53,7 +53,8 @@ The source code is **free** and open source. However, if you want me to host and
 | Custom Commands | 500 | I add custom commands for your group |
 | Donation | Any amount | Support the project ❤️ |
 
-**Contact:** [owner](wa.me//+255636756591)
+**Contact:** [owner](https://wa.me//255777580820)
+
 ---
 
 ## ✨ Features
