@@ -24,9 +24,9 @@ module.exports = {
                 video: {
                     url: result
                 },
-                caption: `› ${ctx.format.bold("Query")}: ${input}`,
+                caption: `»› ${ctx.format.bold("Query")}: ${input}`,
                 buttons: [{
-                    text: "Take More",
+                    text: "More Results",
                     id: `${ctx.used.prefix + ctx.used.command} ${input}`
                 }]
             });
