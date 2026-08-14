@@ -16,7 +16,7 @@ module.exports = {
 
         if (ctx.helper.isUrl(input))
             return await ctx.reply({
-                text: ctx.format.info("Input berupa URL, gunakan tombol download di bawah:"),
+                text: ctx.format.info("Input is a URL, use the download button below:"),
                 buttons: [{
                     text: "Download",
                     id: `${ctx.used.prefix}spotifydl ${input}`
@@ -30,9 +30,9 @@ module.exports = {
             const result = (await ctx.request.get(apiUrl)).data.result;
 
             const resultText = result.map(res =>
-                `› ${ctx.format.bold("Judul")}: ${res.title}\n` +
-                `› ${ctx.format.bold("Artis")}: ${res.artist}\n` +
-                `› ${ctx.format.bold("URL")}: ${res.url}`
+                `»› ${ctx.format.bold("Title")}: ${res.title}\n` +
+                `»› ${ctx.format.bold("Artist")}: ${res.artist}\n` +
+                `»› ${ctx.format.bold("URL")}: ${res.url}`
             ).join("\n\n");
             await ctx.reply(resultText.trim() || ctx.format.info(config.msg.notFound));
         } catch (error) {
