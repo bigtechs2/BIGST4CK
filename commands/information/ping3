@@ -113,7 +113,7 @@ module.exports = {
                     `[](https://wa.me/${config.owner.id})`
                 )
                 .addTip(
-                    `_${config.bot.name} · Owned by [${config.owner.name}](https://wa.me/${config.owner.id})_`
+                    `_${config.bot.name} · Owned by ${config.owner.name}(https://wa.me/${config.owner.id})_`
                 )
                 .addSuggest([
                     `${ctx.used.prefix}menu`,
