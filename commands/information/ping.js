@@ -126,10 +126,10 @@ module.exports = {
                     `› Load  : \`${bar(cpuLoad)}\` ${cpuLoad}% — ${cpuLabel}`
                 )
 
-                // Info sistem — pakai addTip biar tampil kecil di bawah
+                // System info — use addTip to make it appear small below
                 .addTip(`Platform : ${platform}  ·  Node.js : ${nodeVer}  ·  Server Up : ${serverUp}`)
 
-                // Suggest pills — shortcut keren
+                // Suggest pills — shortcut turn
                 .addSuggest([
                     `${ctx.used.prefix}menu`,
                     `${ctx.used.prefix}ping`,
