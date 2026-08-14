@@ -78,7 +78,7 @@ module.exports = {
             ).catch(() => config.bot.thumbnail);
 
             // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-            // EDIT PESAN AWAL
+            // EDIT INITIAL MESSAGE
             // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
             await ctx.editMessage(
                 ctx.id,
