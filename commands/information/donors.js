@@ -8,7 +8,7 @@ module.exports = {
         try {
             const prefix = ctx.used.prefix;
 
-            // ─── Donor List (4 people) ───
+            // ─── Donor List (you may change thanks!) ───
             const donaturList = [
                 {
                     name: "bigtechs1",
