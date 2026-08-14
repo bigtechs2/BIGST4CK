@@ -16,6 +16,7 @@
 
 ## 📌 Table of Contents
 - [Is this bot official?](##-📌-Is-this-bot-official?)
+- [Pricing](##💰Pricing)
 - [Features](##-✨-Features)
 - [Commands](##-📋-Commands)
 - [Installation](##-🚀-Installation)
@@ -39,6 +40,20 @@ This bot is developed and maintained by **bigmanj tech ™** – it is **officia
 > 💡 **Advice from the author:**  
 > Always keep your bot updated, avoid spamming, and respect group admins. This bot is free and open‑source – if you like it, consider ⭐ starring the repo and sharing it with friends!,for updates [join our site for updates](## 🌠 SITE FOR UPDATES)
 
+---
+
+## 💰Pricing
+
+The source code is **free** and open source. However, if you want me to host and maintain the bot for you:
+
+| Service | Price (TZS) | Description |
+| :--- | :--- | :--- |
+| Bot Hosting (Monthly) | 5,000 | I host the bot 24/7 for you |
+| Premium Access (Monthly) | 1,000 | Unlock all premium features |
+| Custom Commands | 500 | I add custom commands for your group |
+| Donation | Any amount | Support the project ❤️ |
+
+**Contact:** wa.me//+255636756591 (Owner)
 ---
 
 ## ✨ Features
