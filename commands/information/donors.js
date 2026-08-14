@@ -1,6 +1,6 @@
 // commands/donatur.js
 module.exports = {
-    name: "dona",
+    name: "donatur",
     aliases: ["donors"],
     category: "information",
 
@@ -8,22 +8,27 @@ module.exports = {
         try {
             const prefix = ctx.used.prefix;
 
-            // ─── Donor List ───
+            // ─── Donor List (4 people) ───
             const donaturList = [
                 {
                     name: "bigtechs1",
                     role: "Server",
-                    image: "https://x.xcute.workers.dev/f/images/399f8732721b.jpg"
+                    image: "https://files.catbox.moe/2qrbb2.png"
                 },
                 {
                     name: "bigtechs2",
                     role: "Creator",
-                    image: "https://x.xcute.workers.dev/f/images/738d07bc5e5b.jpg"
+                    image: "https://files.catbox.moe/qyfsw3.png"
                 },
                 {
                     name: "datperson",
                     role: "Support",
-                    image: "https://x.xcute.workers.dev/f/images/a129964be425.jpg"
+                    image: "https://files.catbox.moe/d7a2zk.png"
+                },
+                {
+                    name: "zoe",
+                    role: "Donor",
+                    image: "https://files.catbox.moe/p5h9c9.png"
                 }
             ];
 
@@ -52,7 +57,7 @@ module.exports = {
                     icon: top.image
                 })
 
-                // ─── Other Donors ───
+                // ─── Other Donors (3) ───
                 .addProduct(rest.map((d, i) => ({
                     title: d.name,
                     brand: d.role,
