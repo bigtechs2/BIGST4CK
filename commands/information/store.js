@@ -1,87 +1,87 @@
 // commands/store.js
 module.exports = {
     name: "store",
-    aliases: ["shop", "storage"],
+    aliases: ["shop", "servers", "hosting"],
     category: "main",
 
     code: async (ctx) => {
         try {
             const prefix = ctx.used.prefix;
 
-            // ─── Storage Packages ───
+            // ─── Pterodactyl Server Plans ───
             const storeList = [
                 {
-                    name: "1GB Storage",
-                    role: "Plan",
+                    name: "1GB RAM Server",
+                    role: "Pterodactyl",
                     price: "1,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/c4wfmk.png"
                 },
                 {
-                    name: "2GB Storage",
-                    role: "Plan",
+                    name: "2GB RAM Server",
+                    role: "Pterodactyl",
                     price: "2,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/amux6f.png"
                 },
                 {
-                    name: "3GB Storage",
-                    role: "Plan",
+                    name: "3GB RAM Server",
+                    role: "Pterodactyl",
                     price: "3,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/lcw5er.png"
                 },
                 {
-                    name: "4GB Storage",
-                    role: "Plan",
+                    name: "4GB RAM Server",
+                    role: "Pterodactyl",
                     price: "4,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/rnbpe5.png"
                 },
                 {
-                    name: "5GB Storage",
-                    role: "Plan",
+                    name: "5GB RAM Server",
+                    role: "Pterodactyl",
                     price: "5,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/c64xmt.png"
                 },
                 {
-                    name: "6GB Storage",
-                    role: "Plan",
+                    name: "6GB RAM Server",
+                    role: "Pterodactyl",
                     price: "6,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/2g04ta.png"
                 },
                 {
-                    name: "7GB Storage",
-                    role: "Plan",
+                    name: "7GB RAM Server",
+                    role: "Pterodactyl",
                     price: "7,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/ehisz1.png"
                 },
                 {
-                    name: "8GB Storage",
-                    role: "Plan",
+                    name: "8GB RAM Server",
+                    role: "Pterodactyl",
                     price: "8,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/pzbhcb.png"
                 },
                 {
-                    name: "9GB Storage",
-                    role: "Plan",
+                    name: "9GB RAM Server",
+                    role: "Pterodactyl",
                     price: "9,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/xo9t0z.png"
                 },
                 {
-                    name: "10GB Storage",
-                    role: "Plan",
+                    name: "10GB RAM Server",
+                    role: "Pterodactyl",
                     price: "10,000 TZS",
                     sale_price: "Buy Now",
                     image: "https://files.catbox.moe/41k8cb.png"
                 },
                 {
-                    name: "Unlimited Storage",
+                    name: "Unlimited RAM Server",
                     role: "Premium",
                     price: "25,000 TZS",
                     sale_price: "🔥 Best Deal",
@@ -127,20 +127,22 @@ module.exports = {
 
                 // ─── Full List ───
                 .addText(
-                    `\`BIGST4CK Storage Store\` 📦\n` +
+                    `\`BIGST4CK Pterodactyl Server Store\` 🖥️\n` +
                     `${listText}\n\n` +
-                    `Choose a storage plan that fits your needs.\n` +
+                    `High-performance Pterodactyl servers hosted on BigPanel.\n` +
                     `All plans include:\n` +
+                    `» Full Root Access\n` +
                     `» 24/7 Uptime\n` +
-                    `» Premium Support\n` +
-                    `» Fast Speeds\n` +
-                    `» Secure Backup\n\n` +
-                    `💡 *Upgrade anytime!* Contact the owner for details.\n\n` +
-                    `Your data is safe with us. ♡`
+                    `» Free SSL\n` +
+                    `» Dedicated IP\n` +
+                    `» One-Click Apps\n` +
+                    `» Instant Setup\n\n` +
+                    `💡 *Upgrade anytime!* Contact the owner for custom plans.\n\n` +
+                    `Your server, your rules. ♥︎`
                 )
 
                 // ─── Tip ───
-                .addTip("_Regards: © BIGST4CK_")
+                .addTip("bigpannel: © BIGST4CK by bigmanjtech™")
 
                 // ─── Quick Actions ───
                 .addSuggest([
