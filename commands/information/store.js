@@ -1,123 +1,152 @@
+// commands/store.js
 module.exports = {
     name: "store",
-    aliases: ["product", "toko"],
-    category: "information",
+    aliases: ["shop", "storage"],
+    category: "main",
+
     code: async (ctx) => {
         try {
-            const ownerNumber = "255636756591";
-            const waLink = `https://wa.me/${ownerNumber}`;
+            const prefix = ctx.used.prefix;
 
-            // ─── Product list ─────────────────────────────────────────────
-            const productList = [
+            // ─── Storage Packages ───
+            const storeList = [
                 {
-                    title: "🛒 BIGST4CK Store",
-                    brand: "By bigmanj tech™",
-                    price: "",
-                    sale_price: "",
-                    image: "https://x.xcute.workers.dev/f/images/399f8732721b.jpg"
+                    name: "1GB Storage",
+                    role: "Plan",
+                    price: "1,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/c4wfmk.png"
                 },
                 {
-                    title: "💻 Starter",
-                    brand: "1c · 512 MB · 5 GB",
-                    price: "5,000 TSh/mo (~2.40 $)",
-                    sale_price: "60,000 TSh/yr (~28.80 $) + 3 days free",
-                    image: "https://x.xcute.workers.dev/f/images/b8066826a651.jpg"
+                    name: "2GB Storage",
+                    role: "Plan",
+                    price: "2,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/amux6f.png"
                 },
                 {
-                    title: "💻 Standard",
-                    brand: "1c · 1 GB · 10 GB",
-                    price: "10,000 TSh/mo (~4.80 $)",
-                    sale_price: "120,000 TSh/yr (~57.60 $) + 3 days free",
-                    image: "https://x.xcute.workers.dev/f/images/569c736b8940.jpg"
+                    name: "3GB Storage",
+                    role: "Plan",
+                    price: "3,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/lcw5er.png"
                 },
                 {
-                    title: "💻 Pro",
-                    brand: "2c · 2 GB · 20 GB",
-                    price: "15,000 TSh/mo (~10.00 $)",
-                    sale_price: "180,000 TSh/yr (~120.00 $) + 5 days free",
-                    image: "https://x.xcute.workers.dev/f/images/569c736b8940.jpg"
+                    name: "4GB Storage",
+                    role: "Plan",
+                    price: "4,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/rnbpe5.png"
                 },
                 {
-                    title: "♾️ Infinity",
-                    brand: "4c · 8 GB · 100 GB",
-                    price: "30,000 TSh/mo (~32.00 $)",
-                    sale_price: "360,000 TSh/yr (~384.00 $) + 7 days free",
-                    image: "https://x.xcute.workers.dev/f/images/7d90efab1187.jpg"
+                    name: "5GB Storage",
+                    role: "Plan",
+                    price: "5,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/c64xmt.png"
                 },
                 {
-                    title: "📜 Script Zero Tr4sh v9.2.4",
-                    brand: "Premium Script",
-                    price: "45,000 TSh (~18 $)",
-                    sale_price: "35,000 TSh (~14 $)",
-                    image: "https://x.xcute.workers.dev/f/images/7cc39168c22c.jpg"
+                    name: "6GB Storage",
+                    role: "Plan",
+                    price: "6,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/2g04ta.png"
                 },
                 {
-                    title: "⚡ Function Premium Add‑on",
-                    brand: "Bot Add‑on",
-                    price: "10,000 TSh (~4 $)",
-                    sale_price: "8,000 TSh (~3 $)",
-                    image: "https://x.xcute.workers.dev/f/images/0c05495147e0.jpg"
+                    name: "7GB Storage",
+                    role: "Plan",
+                    price: "7,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/ehisz1.png"
+                },
+                {
+                    name: "8GB Storage",
+                    role: "Plan",
+                    price: "8,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/pzbhcb.png"
+                },
+                {
+                    name: "9GB Storage",
+                    role: "Plan",
+                    price: "9,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/xo9t0z.png"
+                },
+                {
+                    name: "10GB Storage",
+                    role: "Plan",
+                    price: "10,000 TZS",
+                    sale_price: "Buy Now",
+                    image: "https://files.catbox.moe/41k8cb.png"
+                },
+                {
+                    name: "Unlimited Storage",
+                    role: "Premium",
+                    price: "25,000 TZS",
+                    sale_price: "🔥 Best Deal",
+                    image: "https://files.catbox.moe/k8kuqu.png"
                 }
             ];
 
-            // ─── Separate header and rest ──────────────────────────────
-            const top  = productList[0];
-            const rest = productList.slice(1);
+            // ─── Top Package ───
+            const top = storeList[0];
+            const rest = storeList.slice(1);
 
-            // ─── Build the full list text ──────────────────────────────
+            // ─── Full List Text ───
             const listText =
-                productList
-                    .map((p, i) => {
-                        if (i === 0) return "";
-                        const priceDisplay = p.sale_price
-                            ? `~${p.price}~ ➜ *${p.sale_price}*`
-                            : `*${p.price}*`;
-                        return `${i}. *${p.title}* (${p.brand})\n   ${priceDisplay}`;
+                storeList
+                    .map((item, i) => {
+                        const num = i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : `${i + 1}.`;
+                        return `${num} *${item.name}* — ${item.price}`;
                     })
-                    .filter(line => line)
-                    .join("\n\n");
+                    .join("\n");
 
-            // ─── Send rich store message ───────────────────────────────
             await new AIRich(ctx.core)
-                .addText("`Product Catalog BIG•ST4CK` 🛍️")
-
-                // Header product card
+                // ─── Top Package ───
                 .addProduct({
-                    title:      top.title,
-                    brand:      top.brand,
-                    price:      top.price,
+                    title: top.name,
+                    brand: top.role,
+                    price: top.price,
                     sale_price: top.sale_price,
-                    url:        waLink,
-                    image:      top.image,
-                    icon:       top.image
+                    url: config.bot?.groupLink || "https://wa.me",
+                    image: top.image,
+                    icon: top.image
                 })
 
-                // HScroll for all other products
-                .addProduct(rest.map(p => ({
-                    title:      p.title,
-                    brand:      p.brand,
-                    price:      p.price,
-                    sale_price: p.sale_price,
-                    url:        waLink,
-                    image:      p.image,
-                    icon:       p.image
+                // ─── Other Packages ───
+                .addProduct(rest.map((item) => ({
+                    title: item.name,
+                    brand: item.role,
+                    price: item.price,
+                    sale_price: item.sale_price,
+                    url: config.bot?.groupLink || "https://wa.me",
+                    image: item.image,
+                    icon: item.image
                 })))
 
-                // Full product list with prices and trial info
+                // ─── Full List ───
                 .addText(
-                    `\`Product List\` 📦\n\n` +
+                    `\`BIGST4CK Storage Store\` 📦\n` +
                     `${listText}\n\n` +
-                    `Interested in one of the products above? Click\n` +
-                    `the button below to chat directly with the owner\n` +
-                    `and start the ordering process.`
+                    `Choose a storage plan that fits your needs.\n` +
+                    `All plans include:\n` +
+                    `» 24/7 Uptime\n` +
+                    `» Premium Support\n` +
+                    `» Fast Speeds\n` +
+                    `» Secure Backup\n\n` +
+                    `💡 *Upgrade anytime!* Contact the owner for details.\n\n` +
+                    `Your data is safe with us. ♡`
                 )
 
-                .addTip("_Regards: © BIG•ST4CK_")
+                // ─── Tip ───
+                .addTip("_Regards: © BIGST4CK_")
 
+                // ─── Quick Actions ───
                 .addSuggest([
-                    `Contact Owner`,
-                    `${ctx.used.prefix}owner`,
-                    `${ctx.used.prefix}plans`
+                    `${prefix}buy`,
+                    `${prefix}price`,
+                    `${prefix}owner`
                 ])
 
                 .send(ctx._msg.key.remoteJid, { quoted: ctx._msg });
