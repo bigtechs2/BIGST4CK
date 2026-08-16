@@ -2,7 +2,7 @@
 module.exports = {
     name: "store",
     aliases: ["shop", "servers", "hosting"],
-    category: "main",
+    category: "information",
 
     code: async (ctx) => {
         try {
