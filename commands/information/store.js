@@ -14,7 +14,7 @@ module.exports = {
                     name: "1GB RAM Server",
                     role: "Pterodactyl",
                     price: "1,500 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/c4wfmk.png"
                 },
                 {
@@ -28,56 +28,56 @@ module.exports = {
                     name: "3GB RAM Server",
                     role: "Pterodactyl",
                     price: "4,500 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/lcw5er.png"
                 },
                 {
                     name: "4GB RAM Server",
                     role: "Pterodactyl",
                     price: "6,000 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/rnbpe5.png"
                 },
                 {
                     name: "5GB RAM Server",
                     role: "Pterodactyl",
                     price: "7,500 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/c64xmt.png"
                 },
                 {
                     name: "6GB RAM Server",
                     role: "Pterodactyl",
                     price: "9,000 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/2g04ta.png"
                 },
                 {
                     name: "7GB RAM Server",
                     role: "Pterodactyl",
                     price: "10,500 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/ehisz1.png"
                 },
                 {
                     name: "8GB RAM Server",
                     role: "Pterodactyl",
                     price: "12,000 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/pzbhcb.png"
                 },
                 {
                     name: "9GB RAM Server",
                     role: "Pterodactyl",
                     price: "13,500 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/xo9t0z.png"
                 },
                 {
                     name: "10GB RAM Server",
                     role: "Pterodactyl",
                     price: "15,000 TZS",
-                    sale_price: "Buy Now",
+                    sale_price: "Order Now",
                     image: "https://files.catbox.moe/41k8cb.png"
                 },
                 {
@@ -139,7 +139,7 @@ module.exports = {
                     `» One-Click Apps\n` +
                     `» Instant Setup\n\n` +
                     `💡 *Upgrade anytime!* Contact the owner for custom plans.\n\n` +
-                    `Your server, your rules. ♡`
+                    `Your server, your rules. ♥︎`
                 )
 
                 // ─── Tip ───
