@@ -1,6 +1,6 @@
 module.exports = {
     name: "bizinfo",
-    aliases: ["profile", "brand", "aboutme", "business"],
+    aliases: ["profile","aboutme", "business"],
     category: "information",
 
     code: async (ctx) => {
