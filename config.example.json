@@ -5,7 +5,9 @@
     "thumbnail": "https://files.catbox.moe/0hmdof.png",
     "groupjid": "",
     "groupLink": "https://chat.whatsapp.com/EWlNm6bMYJCELwzvnmboyC",
-    "channellink": "https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v"
+    "channellink": "https://whatsapp.com/channel/0029VbDJJY19WtC1T0Vgqp0v",
+    "channelDp": "https://files.catbox.moe/0hmdof.png",
+    "channelName": "BIGST4CK Updates"
   },
   "msg": {
     "admin": "This command can only be used by group admins!",
@@ -71,19 +73,19 @@
     "unavailableAtNight": false,
     "useCoin": true,
     "usePairingCode": true,
-    "customPairingCode": "BIGTECHS", 
+    "customPairingCode": "BIGTECHS",
     "useStore": false,
     "useServer": false,
     "prefix": "."
   },
   "pterodactyl": {
-    "panelUrl": "https://panel.username.org",
-    "apiKey": "ptla_xxxxx",
-    "defaultEgg": 1,
-    "defaultLocation": 1,
-    "defaultNest": 5
+    "panelUrl": "",
+    "apiKey": "",
+    "defaultEgg": ,
+    "defaultLocation": ,
+    "defaultNest": 
   },
   "note": {
-    "message": "⚠️ This is only for server seller people. Do not use this if you are not a server seller." 
+    "message": "⚠️ This is only for server seller people. Do not use this if you are not a server seller."
   }
 }
