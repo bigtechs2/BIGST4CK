@@ -36,16 +36,17 @@ module.exports = {
                 body = `🤖 Bot has been active for:\n_Here's the detailed breakdown._`;
             }
 
-            // ── Send via AIRich (NIXCODE style) ──
+            // ── Send via AIRich ──
             if (typeof AIRich !== "undefined" && AIRich) {
                 const rich = new AIRich(ctx.core)
                     .setTitle(`⏱️ ${config?.bot?.name || 'Bot'} Uptime`)
                     .setBody(body)
-                    .addTable(rows)
-                    .setFooter(config?.msg?.footer || "© BIGST4CK by bigmanjtech™");
+                    .setFooter(config?.msg?.footer || "© BIGST4CK by bigmanjtech™")
+                    .addImage("https://files.catbox.moe/0hmdof.png"); // ← FIXED: .addImage() instead of .setThumbnail()
 
-                // ── If no table, show a different message ──
-                if (rows.length === 2) {
+                if (rows.length > 2) {
+                    rich.addTable(rows);
+                } else {
                     rich.setBody(body + "\n\n_Enjoy your freshly started bot!_");
                 }
 
